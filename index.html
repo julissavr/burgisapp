@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framework7</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<div id="app">
+			
+		
+		<section class="panel panel-left panel-cover">
+			<div class="list">
+			  <ul>
+				<li>
+				  <a href="/home/" class="item-link item-content panel-close">
+					<div class="item-media"><i class="material-icons">restaurant_menu</i></div>
+					<div class="item-inner">
+					  <div class="item-title">Menu</div>
+					  <div class="item-after"></div>
+					</div>
+				  </a>
+				</li>
+				<li>
+				  <a href="/promociones/" class="item-link item-content panel-close">
+					<div class="item-media"><i class="material-icons">widgets</i></div>
+					<div class="item-inner">
+					  <div class="item-title">Promociones</div>
+					  <div class="item-after"> <span class="badge">5</span></div>
+					</div>
+				  </a>
+				</li>
+				<li>
+				  <a href="/carrito/" class="item-link item-content panel-close">
+					<div class="item-media"><i class="material-icons">shopping_cart</i></div>
+					<div class="item-inner">
+					  <div class="item-title">Carrito</div>
+					</div>
+				  </a>
+				</li>
+				  <li>
+				  <a href="/perfil/" class="item-link item-content panel-close">
+					<div class="item-media"><i class="material-icons">person</i></div>
+					<div class="item-inner">
+					  <div class="item-title">Mi Perfil</div>
+					</div>
+				  </a>
+				</li>
+			  </ul>
+			</div>
+		</section>
+		
+		
+		
+		<div class="view view-main view-init">
+        
+			<section data-name="home" class="page">
+
+			  <!-- Top Navbar -->
+			  <nav class="navbar">
+				<div class="navbar-bg"></div>
+				<div class="navbar-inner">
+					<div class="left">
+					</div>
+				  	<div class="title">Burgis</div>
+					<div class="right">
+						<a href="#" class="link panel-open" data-panel="left">
+							<span class="material-icons">menu</span>
+						</a>
+					</div>
+				</div>
+			  </nav>
+
+
+			  <section class="page-content">
+				  
+				  <h2 class="block-title block-title-medium">Menú</h2>
+				  <div class="block" id="menu-home">
+				  
+						<div class="swiper-container swiper-init" data-slides-per-view="1" data-pagination='{"el": ".swiper-pagination"}'>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+								
+									<div class="card">
+										  <div class="card-content card-content-padding">
+												<div class="row">
+													<article class="col-30">
+														<h4 class="nombre">Burgis #1</h4>
+														<p class="precio">L 150.00</p>
+													</article>
+													<article class="col-70">
+														<img src="img/AdobeStock_702207098_Preview.png" alt="" class="img-fluid">
+													</article>
+												</div>
+										  </div>					  
+									  </div><!-- /card-->
+								
+								</div><!-- /swiper-slide-->
+								
+								<div class="swiper-slide">
+								
+									<div class="card">
+										  <div class="card-content card-content-padding">
+												<div class="row">
+													<article class="col-30">
+														<h4 class="nombre">Burgis #2</h4>
+														<p class="precio">L 225.00</p>
+													</article>
+													<article class="col-70">
+														<img src="img/AdobeStock_785239227_Preview.png" alt="" class="img-fluid">
+													</article>
+												</div>
+										  </div>					  
+									  </div><!-- /card-->
+								
+								</div><!-- /swiper-slide-->
+								
+								<div class="swiper-slide">
+								
+									<div class="card">
+										  <div class="card-content card-content-padding">
+												<div class="row">
+													<article class="col-30">
+														<h4 class="nombre">Burgis #3</h4>
+														<p class="precio">L 189.00</p>
+													</article>
+													<article class="col-70">
+														<img src="img/AdobeStock_601565494_Preview.png" alt="" class="img-fluid">
+													</article>
+												</div>
+										  </div>					  
+									  </div><!-- /card-->
+								
+								</div><!-- /swiper-slide-->
+								
+							</div><!-- /swiper-wrapper-->
+							
+							<div class="swiper-pagination"></div>
+							
+						</div><!-- /swiper-container-->
+					  
+					  
+					  
+				  
+				  </div><!-- /#menu-home-->
+				  
+				  
+				  <h2 class="block-title fondo"><span>Recientes</span>Favoritos de todos</h2>
+				  <div class="block">
+					
+					  <div class="list media-list" id="list-productos">
+						  <ul>
+							  <li>
+								<a href="/burgis1/" class="item-link item-content">
+									<div class="item-media">
+										<img src="img/AdobeStock_702207098_Preview.png" alt="" class="img-fluid">
+									</div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">Clásica</div>
+										</div>
+										
+										<div class="item-text">
+											Disfruta de nuestra clásica hamburguesa de carne de res jugosita con queso y papas fritas.
+										</div>
+										<div class="row">										
+                                            <article class="col-70">
+                                                 <span class="precio">L 150.00</span>
+												<div class="list-stars">
+													<span class="material-icons">star</span>
+													<span class="material-icons">star</span>
+													<span class="material-icons">star</span>
+										 		
+												</div>
+												
+                                            </article>
+                                            <article class="col-30 text-align-right">
+                                                <span class="material-icons">favorite</span>
+                                            </article>
+                                        </div>
+										
+									</div>
+								</a>
+							  </li>	
+							  
+							  <li>
+								<a href="/burguis2/" class="item-link item-content">
+									<div class="item-media">
+										<img src="img/AdobeStock_785239227_Preview.png" alt="" class="img-fluid">
+									</div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">BBQ</div>
+										</div>
+										
+										<div class="item-text">
+											Prueba nuestra hambuerguesa con salsa BBQ y aros de cebolla.
+										</div>
+										<div class="row">										
+                                            <article class="col-70">
+                                                <span class="precio">L 200.00</span>
+												<div class="list-stars">
+													<span class="material-icons">star</span>
+													<span class="material-icons">star</span>
+													<span class="material-icons">star</span>
+													
+												</div>
+												
+                                            </article>
+                                            <article class="col-30 text-align-right">
+                                                <span class="material-icons">favorite</span>
+                                            </article>
+                                        </div>
+										
+									</div>
+								</a>
+							  </li>	
+							  
+							  <li>
+								<a href="/burgis3/" class="item-link item-content">
+									<div class="item-media">
+										<img src="img/AdobeStock_601565494_Preview.png" alt="" class="img-fluid">
+									</div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">Doble</div>
+										</div>
+										
+										<div class="item-text">
+											Disfruta de nuestra clásica hamburguesa de carne doble con queso, agregale refresco y papas fritas.
+										</div>
+										<div class="row">										
+                                            <article class="col-70">
+                                                <span class="precio">L 249.00</span>
+												<div class="list-stars">
+													<span class="material-icons">star</span>
+													<span class="material-icons">star</span>
+													<span class="material-icons">star</span>
+													
+												</div>
+												
+                                            </article>
+                                            <article class="col-30 text-align-right">
+                                                <span class="material-icons">favorite</span>
+                                            </article>
+                                        </div>
+										
+									</div>
+								</a>
+							  </li>	
+						  </ul>
+					  
+					  </div>
+					  
+				  
+				  </div>
+				  
+				  
+			  </section> <!--/page-content -->
+
+			</section> <!--/page -->
+			
+			
+			<nav class="toolbar toolbar-bottom tabbar tabbar-labels">
+				<div class="toolbar-inner">
+				
+					<a href="/home/" class="tab-link">
+						<i class="material-icons">restaurant_menu</i>
+						<i class="tabbar-label">Menú</i>
+					</a>
+					<a href="/promociones/" class="tab-link">
+						<i class="material-icons">widgets</i>
+						<i class="tabbar-label">Promociones</i>
+					</a>
+					<a href="/carrito/" class="tab-link">
+						<i class="material-icons">shopping_cart</i>
+						<i class="tabbar-label">Carrito</i>
+					</a>
+					<a href="/perfil/" class="tab-link">
+						<i class="material-icons">person</i>
+						<i class="tabbar-label">Perfil</i>
+					</a>
+				</div>
+			</nav>
+			
+			
+		</div><!--/view --> 
+		
+		<div id="loading-screen">
+  <img src="img/Captura de pantalla 2024-06-16 185515.png" alt="Loading..." />
+</div>
+		
+		
+<section id="modal-login" class="login-screen modal-in_">
+  <!-- Default view-page layout -->
+  <div class="view">
+    <div class="page login-screen-page">
+      <!-- page-content has additional login-screen content -->
+      <div class="page-content login-screen-content">
+        <div class="login-screen-title">Iniciar Sesión</div>
+		  <hr class="hr-azul">
+		  <hr class="hr-naranja">
+        <!-- Login form -->
+        <form id="form-login">
+          <div class="list">
+            <ul>
+              <li class="item-content item-input item-input-outline">
+				<div class="item-media">
+					<i class="material-icons">mail_outline</i>
+				</div>
+                <div class="item-inner">
+                  <div class="item-title item-label">Correo electrónico</div>
+                  <div class="item-input-wrap">
+                    <input type="email" name="username" placeholder="user_example@example.com" required validate>
+                   	 <i class="input-clear-button"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input item-input-outline">
+				<div class="item-media">
+					<span class="material-icons">lock_outline</span>
+				</div>
+                <div class="item-inner">
+                  <div class="item-title item-label">Contraseña</div>
+                  <div class="item-input-wrap">
+                    <input type="password" name="password" placeholder="********" required validate>
+                     <i class="input-clear-button"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="list block">
+            <ul>
+              <li>
+				  <div class="text-align-center margin-bottom">
+				  	<a href="#">¿Olvidaste tu contraseña?</a>
+				  </div>				  
+                  <a href="#" id="btnLogin" class="button button-fill button-round">Iniciar sesión</a>
+				  <a href="#" class="button login-screen-close">Ingresar como anónimo</a>
+				  
+              </li>
+            </ul>
+            <div class="block-footer">No tienes una cuenta <a href="#" class="popup-open" data-popup="#popup-cuenta">Haz una cuenta</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section><!--/login-screen -->
+		
+		
+		
+	<section id="popup-cuenta" class="popup">
+		
+		<div class="view">
+    <div class="page login-screen-page">
+      <!-- page-content has additional login-screen content -->
+      <div class="page-content login-screen-content no-margin-top">
+        <div class="login-screen-title">Crear una Cuenta</div>
+		  <hr class="hr-azul">
+		  <hr class="hr-naranja">
+        <!-- Login form -->
+        <form id="form-cuenta">
+          <div class="list">
+            <ul>
+			  <li class="item-content item-input item-input-outline">
+				<div class="item-media">
+					<i class="material-icons">person_outline</i>
+				</div>
+                <div class="item-inner">
+                  <div class="item-title item-label">Nombre</div>
+                  <div class="item-input-wrap">
+                    <input type="email" name="username" placeholder="Axel David" required validate>
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input item-input-outline">
+				<div class="item-media">
+					<span class="material-icons">mail_outline</span>
+				</div>
+                <div class="item-inner">
+                  <div class="item-title item-label">Correo electrónico</div>
+                  <div class="item-input-wrap">
+                    <input type="email" name="username" placeholder="user_example@example.com" required validate>
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input item-input-outline">
+				<div class="item-media">
+					<span class="material-icons">lock_outline</span>
+				</div>
+                <div class="item-inner">
+                  <div class="item-title item-label">Contraseña</div>
+                  <div class="item-input-wrap">
+                    <input type="password" name="password" placeholder="********" required validate>
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="list block">
+            <ul>
+              <li>
+				  			  
+                  <a href="#" id="btnRegistrar" class="button button-fill button-round">Registrar Cuenta</a>
+				  
+              </li>
+            </ul>
+            <div class="block-footer">Ya tienes una cuenta <a href="#" class="popup-close">Iniciar sesión</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+		
+		
+	</section>
+		
+		
+		
+	</div><!--/app -->
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+	
+	
+	
+</body>
+</html>
+
